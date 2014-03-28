@@ -23,47 +23,66 @@ angular.module('starter', ['ionic', 'starter.services', 'starter.controllers'])
       templateUrl: "templates/tabs.html"
     })
 
-    // the pet tab has its own child nav-view and history
-    .state('tab.pet-index', {
-      url: '/pets',
+
+    .state('tab.inbox', {
+      url: '/inbox',
       views: {
-        'pets-tab': {
-          templateUrl: 'templates/pet-index.html',
+        'inbox-tab': {
+          templateUrl: 'templates/inbox.html'
+        }
+      }
+    })
+    
+    // the stream (pet) tab has its own child nav-view and history
+    .state('tab.stream-index', {
+      url: '/stream',
+      views: {
+        'stream-tab': {
+          templateUrl: 'templates/stream.html',
           controller: 'PetIndexCtrl'
         }
       }
     })
 
-    .state('tab.pet-detail', {
-      url: '/pet/:petId',
+    .state('tab.stream-detail', {
+      url: '/stream/:petId',
       views: {
-        'pets-tab': {
-          templateUrl: 'templates/pet-detail.html',
+        'stream-tab': {
+          templateUrl: 'templates/stream-detail.html',
           controller: 'PetDetailCtrl'
         }
       }
     })
 
-    .state('tab.adopt', {
-      url: '/adopt',
+    .state('tab.bank', {
+      url: '/bank',
       views: {
-        'adopt-tab': {
-          templateUrl: 'templates/adopt.html'
+        'bank-tab': {
+          templateUrl: 'templates/bank.html'
         }
       }
     })
 
-    .state('tab.about', {
-      url: '/about',
+    .state('tab.mypage', {
+      url: '/mypage',
       views: {
-        'about-tab': {
-          templateUrl: 'templates/about.html'
+        'mypage-tab': {
+          templateUrl: 'templates/mypage.html'
+        }
+      }
+    })
+    
+    .state('tab.send', {
+      url: '/send',
+      views: {
+        'send-tab': {
+          templateUrl: 'templates/send.html'
         }
       }
     });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/pets');
+  $urlRouterProvider.otherwise('/tab/inbox');
 
 });
 

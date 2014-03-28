@@ -4,25 +4,35 @@
   Each tab's child <ion-nav-view> directive will have its own 
   navigation history that also transitions its views in and out.
 -->
-<ion-tabs class="tabs-icon-top tabs-default">
+<ion-tabs class="tabs-icon-top tabs-positive">
 
 
-  <!-- Pets Tab -->
-  <ion-tab title="Pets" icon="icon ion-home" href="#/tab/pets">
-    <ion-nav-view name="pets-tab"></ion-nav-view>
+  <!-- Inbox Tab -->
+  <ion-tab title="Inbox" icon="icon ion-search" href="#/tab/inbox">
+    <ion-nav-view name="inbox-tab"></ion-nav-view>
+  </ion-tab>
+  
+    <!-- Stream Tab -->
+  <ion-tab title="Stream" icon="icon ion-home" href="#/tab/stream">
+    <ion-nav-view name="stream-tab"></ion-nav-view>
   </ion-tab>
 
 
-  <!-- Adopt Tab -->
-  <ion-tab title="Adopt" icon="icon ion-heart" href="#/tab/adopt">
-    <ion-nav-view name="adopt-tab"></ion-nav-view>
+  <!-- Bank Tab -->
+  <ion-tab title="Bank" icon="icon ion-heart" href="#/tab/bank">
+    <ion-nav-view name="bank-tab"></ion-nav-view>
   </ion-tab>
 
 
-  <!-- About Tab -->
-  <ion-tab title="About" icon="icon ion-search" href="#/tab/about">
-    <ion-nav-view name="about-tab"></ion-nav-view>
+  <!-- My Page Tab -->
+  <ion-tab title="My Page" icon="icon ion-search" href="#/tab/mypage">
+    <ion-nav-view name="mypage-tab"></ion-nav-view>
   </ion-tab>
 
 
+  <!-- Send Tab -->
+  <ion-tab title="Send" icon="icon ion-search" href="#/tab/send">
+    <ion-nav-view name="send-tab"></ion-nav-view>
+  </ion-tab>
+  
 </ion-tabs>
